@@ -83,6 +83,22 @@ body > * {
     animation: fadeIn 0.5s ease-in-out;
 }
 
+/* Define the keyframes for fadeOut */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Apply fade-out animation */
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+
 
 .sidenav{
     height: 100%;
@@ -100,10 +116,9 @@ body > * {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 25px;
     color: #379294;
     display: block;
-    margin-bottom: 20px;
   }
   
   /* When you mouse over the navigation links, change their color */
