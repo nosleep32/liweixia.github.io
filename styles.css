@@ -107,7 +107,7 @@ body > * {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #5e0822;
+    background-color: #f05e56;
     overflow-x: hidden;
     padding-top: 35px;
 }
@@ -117,7 +117,7 @@ body > * {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #379294;
+    color: #072559;
     display: block;
   }
   
