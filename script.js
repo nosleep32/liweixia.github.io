@@ -22,6 +22,3 @@ document.getElementById('sidenav').addEventListener('mouseenter', function() {
 document.getElementById('sidenav').addEventListener('mouseleave', function() {
     this.style.left = '-250px';
 });
-
-
-
