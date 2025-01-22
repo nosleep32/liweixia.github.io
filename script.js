@@ -15,12 +15,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById('sidebar').addEventListener('mouseenter', function() {
+document.getElementById('sidenav').addEventListener('mouseenter', function() {
     this.style.left = '0';
 });
 
-document.getElementById('sidebar').addEventListener('mouseleave', function() {
+document.getElementById('sidenav').addEventListener('mouseleave', function() {
     this.style.left = '-250px';
 });
+
 
 
