@@ -57,17 +57,18 @@ body > * {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .image-container {
-    display: grid;
-    place-items: center;       /* Centers the image both horizontally and vertically */
-    height: 90vh;             /* Container height, adjust as needed */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
-
 /* Define the keyframes for fadeIn */
 @keyframes fadeIn {
     from {
