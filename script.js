@@ -14,3 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.getElementById('sidebar').addEventListener('mouseenter', function() {
+    this.style.left = '0';
+});
+
+document.getElementById('sidebar').addEventListener('mouseleave', function() {
+    this.style.left = '-250px';
+});
+
+
