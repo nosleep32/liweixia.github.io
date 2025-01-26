@@ -184,36 +184,47 @@ body > * {
     animation: fadeOut 0.5s ease-in-out;
 }
 
-
-
-.sidenav{
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #a63c37;
-    overflow-x: hidden;
-    padding-top: 35px;
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: #333;
 }
 
-/* The navigation menu links */
+/* Existing sidenav styles */
+.sidenav {
+  height: 100%;
+  width: 0; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a63c37;
+  overflow-x: hidden;
+  padding-top: 35px;
+  transition: 0.5s;
+}
+
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #96b5ec;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #96b5ec;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
 
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidenav a {
+    font-size: 18px;
   }
+}
