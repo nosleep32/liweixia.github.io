@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function() {
     var links = document.querySelectorAll(".sidenav a");
 
@@ -17,10 +15,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById('sidenav').addEventListener('mouseenter', function() {
-    this.style.left = '0';
-});
-
-document.getElementById('sidenav').addEventListener('mouseleave', function() {
-    this.style.left = '-250px';
-});
