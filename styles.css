@@ -10,10 +10,12 @@
 
 body {
   font-family: 'Geist Sans', sans-serif;
-  color: #77a4c9; /* Updated color */
+  color: #19358a;
+  background-color: #77a4c9; /* Added background color */
   margin: 0;
   padding: 0;
 }
+
 
 .container{
   width: 100%;
