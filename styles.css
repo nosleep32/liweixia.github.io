@@ -1,13 +1,98 @@
-body {
-    background-image: url('https://i.postimg.cc/5NPmTFYv/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Geist Sans', sans-serif;
-    color: #19358a;
-    margin: 0;
-    padding: 0;
+/* styles.css */
+
+/* Apply a background color to the body */
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('path/to/geist-sans.woff2') format('woff2'),
+       url('path/to/geist-sans.woff') format('woff');
 }
+
+body {
+  font-family: 'Geist Sans', sans-serif;
+  color: #19358a;
+  background-color: #77a4c9; /* Added background color */
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container h1:nth-child(1) {
+  color: #355c7d;
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40,end) forwards;
+}
+
+.container h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 
 
 /* Style the header */
@@ -47,67 +132,16 @@ p {
     margin: 20px;
 }
 
-.section-bubble {
-    background-color: #68d9d9;
+/* Add some padding and a border to the content */
+body > * {
     padding: 20px;
-    border-radius: 30px;
-    width: 1000px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    text-align: center;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Existing sidenav styles */
-.sidenav {
-    height: 100%;
-    width: 0; /* Initially hidden */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #a63c37;
-    overflow-x: hidden;
-    padding-top: 35px;
-    transition: 0.5s;
-}
-
-.sidenav a {
-    display: flex;
-    align-items: center;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #96b5ec;
-}
-
-.sidenav a i {
-    margin-right: 10px;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    color: #333;
-}
-
 
 .image-container {
     display: grid;
@@ -149,3 +183,37 @@ p {
 .fade-out {
     animation: fadeOut 0.5s ease-in-out;
 }
+
+
+
+.sidenav{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a63c37;
+    overflow-x: hidden;
+    padding-top: 35px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #96b5ec;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
