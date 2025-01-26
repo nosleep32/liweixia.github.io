@@ -185,16 +185,19 @@ body > * {
 }
 
 
+/* Sidebar Styling */
 .sidenav {
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -250px; /* Initially hidden */
     width: 250px;
     height: 100%;
     background: #333;
     color: #fff;
+    overflow-x: hidden;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-    transition: left 0.3s ease;
+    transition: 0.3s; /* Smooth sliding effect */
+    z-index: 1000;
 }
 
 .sidenav ul {
@@ -206,12 +209,14 @@ body > * {
 .sidenav ul li {
     padding: 15px;
     border-bottom: 1px solid #444;
+    text-align: left;
 }
 
 .sidenav ul li a {
     text-decoration: none;
     color: #fff;
     display: block;
+    font-size: 18px;
 }
 
 .sidenav ul li a:hover {
@@ -219,20 +224,12 @@ body > * {
 }
 
 .menu-icon {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     font-size: 24px;
     cursor: pointer;
-    z-index: 10;
-}
-
-.menu-icon:hover + .sidenav {
-    left: 0;
-}
-
-.sidenav:hover {
-    left: 0;
+    z-index: 1100;
 }
 
 .menu-icon i {
@@ -240,10 +237,15 @@ body > * {
     background: #333;
     padding: 10px;
     border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+/* Open the sidebar */
+.sidenav.open {
+    left: 0;
+}
+
+/* Adjust page content when the sidebar is open */
+body.sidebar-open {
+    overflow: hidden; /* Prevent scrolling when sidebar is open */
+}
