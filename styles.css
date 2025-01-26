@@ -196,6 +196,25 @@ body > * {
     background-color: #a63c37;
     overflow-x: hidden;
     padding-top: 35px;
+    width: 0; /* Initially hidden */
+    transition: 0.5s; /* Smooth transition */
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* The navigation menu links */
