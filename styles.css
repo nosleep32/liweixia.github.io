@@ -1,7 +1,6 @@
 /* styles.css */
 
 /* Apply a background color to the body */
-
 @font-face {
   font-family: 'Geist Sans';
   src: url('path/to/geist-sans.woff2') format('woff2'),
@@ -16,8 +15,7 @@ body {
   padding: 0;
 }
 
-
-.container{
+.container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +33,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   width: 170px;
-  animation: type 2s steps(40,end) forwards;
+  animation: type 2s steps(40, end) forwards;
 }
 
 .container h1:nth-child(2) {
@@ -49,7 +47,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   overflow: hidden;
-  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+  animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
 }
 
 @keyframes shring-animation {
@@ -79,10 +77,10 @@ body {
   0% {
     width: 0;
   }
-  1%, 99%{
+  1%, 99% {
     border-right: 1px solid orange;
   }
-  100%{
+  100% {
     border-right: none;
   }
 }
@@ -92,8 +90,6 @@ body {
     border-color: transparent;
   }
 }
-
-
 
 /* Style the header */
 h1 {
@@ -111,7 +107,7 @@ h2 {
 }
 
 h3 {
-   text-align: center;
+    text-align: center;
     font-size: 2.3em;
     margin-top: 20px;
 }
@@ -122,8 +118,6 @@ h6 {
     font-size: 1.3em;
     margin-top: 20px;
 }
-
-
 
 /* Style the paragraph */
 p {
@@ -184,7 +178,7 @@ body > * {
     animation: fadeOut 0.5s ease-in-out;
 }
 
-/* sidenav code */
+/* Sidebar styles */
 .sidenav {
     height: 100%;
     width: 0; /* Initially hidden */
