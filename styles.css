@@ -206,13 +206,6 @@ body > * {
     color: #96b5ec;
     display: block;
   }
-
-.sidenav a i {
-    margin-right: 10px;
-    color: inherit;  /* Ensures the icon inherits the text color */
-    font-size: inherit;  /* Ensures the icon inherits the text size */
-}
-
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
