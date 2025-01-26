@@ -14,3 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+// Sidebar toggling
+document.addEventListener("DOMContentLoaded", function() {
+    var menuIcon = document.getElementById('menu-icon');
+    var closeBtn = document.getElementById('close-btn');
+    var sidenav = document.getElementById('mySidenav');
+
+    menuIcon.addEventListener('click', function() {
+        sidenav.style.width = '250px';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        sidenav.style.width = '0';
+    });
+});
