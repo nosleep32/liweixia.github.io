@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener("DOMContentLoaded", function() {
     var links = document.querySelectorAll(".sidenav a");
 
@@ -14,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
 
 // Sidebar toggling
 document.addEventListener("DOMContentLoaded", function() {
