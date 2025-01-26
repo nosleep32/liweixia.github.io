@@ -1,3 +1,4 @@
+<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,45 +6,79 @@
     <link rel="icon" href="https://i.postimg.cc/2S7CCrY4/icon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liwei Xia - Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Liwei Xia - Projects </title>
 </head>
 <body>
-    <!-- Sidebar and Toggle Menu -->
-    <div class="menu-icon" onclick="toggleSidebar()">
-        <i class='bx bx-menu'></i>
-    </div>
+    <style>
+        body {
+            background-image: url('https://i.postimg.cc/TP733wfz/projects.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .section-bubble2 {
+            line-height: 1.5;
+            background-color: #36965b; /* Light green color */
+            padding: 20px;
+            border-radius: 10px; /* Adds a slight roundness to the corners */
+            width: 1500px; /* Fixed width */
+            margin: 20px auto; /* Centers the section horizontally */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+            display: block;
+            text-align: center; /* Centers text inside the section */
+        }
+
+        .LifeIsStrange-background {
+            background: url('https://preview.redd.it/nga7yl29ar041.jpg?width=640&crop=smart&auto=webp&s=3ac2d4fef12581d0a381223c790cf485736182e9') no-repeat center center/cover;
+            line-height: 1.5;
+            padding: 20px;
+            border-radius: 10px; /* Adds a slight roundness to the corners */
+            width: 1500px; /* Fixed width */
+            margin: 20px auto; /* Centers the section horizontally */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+            display: block;
+            text-align: center; /* Centers text inside the section */
+        }
+
+        .LifeIsStrange-background p {
+            color: #a89d9d;
+        }
+
+        .LifeIsStrange-background p a {
+            color: #a89d9d;
+        }
+        
+    </style>
     <div class="sidenav" id="mySidenav">
-        <ul>
-            <li><a href="index.html"><i class='bx bxs-home'></i> Home</a></li>
-            <li><a href="Projects.html"><i class='bx bx-laptop'></i> Projects</a></li>
-        </ul>
+        <a href="index.html"><i class='bx bxs-home'></i> Home</a>
+        <a href="Projects.html"><i class='bx bx-laptop'></i> Projects</a>
     </div>
 
-    <!-- Main Content -->
+
     <div class="section-bubble2 fade-in">
         <h1>Projects</h1>
         <p>I have a multitude of ongoing and completed projects that you can view! Feel free to leave any comments or suggestions on my projects by contacting me!</p>
     </div>
 
-    <div class="LifeIsStrange-background fade-in">
+     <div class="LifeIsStrange-background fade-in">
         <h2>Life is Strange Practice Image (Windows Server 2022)</h2>
-        <p>This was my first ever practice image I developed (thus, there will be some errors when completing the image)! I used <a href="https://github.com/elysium-suite/aeacus">Aeacus</a>, an open-source practice image development tool.</p>
-        <ul>
-            <li><a href="https://drive.google.com/file/d/1UijdAgnS7WVdZke3PKbvHNo6adL6Rql9/view?usp=sharing">Practice Image Download Link</a></li>
-            <li><a href="https://docs.google.com/presentation/d/1GOv-7FGdGwwg_lArSULieXkqAFGCCANEmiudmnkcVVI/edit?usp=sharing">Slideshow Walkthrough</a></li>
-            <li><a href="https://drive.google.com/file/d/1n_vhcBMeAhYoH5cJdYZ202ZCyUCr-ijC/view?usp=sharing">Vulnerability Scoring Key</a></li>
-        </ul>
-        <p>Feedback is greatly appreciated!</p>
+         <p> This was my first ever practice image I developed (thus, there will be some errors when completing the image) !  I used <a href = "https://github.com/elysium-suite/aeacus">Aeacus</a>, an open-source practice image development tool.</p>
+         <ul>
+             <li><a href = "https://drive.google.com/file/d/1UijdAgnS7WVdZke3PKbvHNo6adL6Rql9/view?usp=sharing">Practice Image Download Link</a></li>
+             <li><a href = "https://docs.google.com/presentation/d/1GOv-7FGdGwwg_lArSULieXkqAFGCCANEmiudmnkcVVI/edit?usp=sharing">Slideshow Walkthrough</a></li>
+             <li><a href = "https://drive.google.com/file/d/1n_vhcBMeAhYoH5cJdYZ202ZCyUCr-ijC/view?usp=sharing">Vulnerability Scoring Key</a></li>
+         </ul>
+         <p> Feedback is greatly appreciated! </p>
     </div>
-
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('mySidenav');
-            const body = document.body;
-            sidebar.classList.toggle('open');
-            body.classList.toggle('sidebar-open');
-        }
-    </script>
+    
+    <div class="section-bubble2 fade-in">
+        <h1> Contacts </h1>
+        <h6> <a href = "https://www.linkedin.com/in/liwei-xia-9b0318305">Linkedin</a> </h6>
+        <h6> <a href = "mailto:liweixia24@gmail.com">Email</a> </h6>
+        <h6> <a href = "https://i.postimg.cc/sDkfMqF2/Liwei-Xia-Resume.png">Resume</a></h6>
+        <h6> Phone Number: (626) 620-3044</h6>
+    </div> 
 </body>
 </html>
