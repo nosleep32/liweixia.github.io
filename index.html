@@ -4,70 +4,7 @@
     <link rel="icon" href="https://i.postimg.cc/2S7CCrY4/icon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-image: url('https://i.postimg.cc/5NPmTFYv/background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .section-bubble {
-            background-color: #68d9d9; /* Light blue color */
-            padding: 20px;
-            border-radius: 30px; /* Adds a slight roundness to the corners */
-            width: 1500px; /* Fixed width */
-            margin: 20px auto; /* Centers the section horizontally */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-            display: block;
-            text-align: center; /* Centers text inside the section */
-        }
-        
-        /* Existing sidenav styles */
-        .sidenav {
-            height: 100%;
-            width: 0; /* Initially hidden */
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #a63c37;
-            overflow-x: hidden;
-            padding-top: 35px;
-            transition: 0.5s;
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #96b5ec;
-            display: block;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-            .sidenav a {
-                font-size: 18px;
-            }
-        }
-
-        .menu-icon {
-            font-size: 30px;
-            cursor: pointer;
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            color: #333;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title> Liwei Xia - Home </title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -101,15 +38,6 @@
         <a href="index.html"><i class='bx bxs-home-alt-2'></i> Home</a>
         <a href="Projects.html"><i class='bx bx-laptop'></i> Projects</a>
     </div>
-    <script>
-        function toggleNav() {
-            const sidenav = document.getElementById("mySidenav");
-            if (sidenav.style.width === "200px") {
-                sidenav.style.width = "0";
-            } else {
-                sidenav.style.width = "200px";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
