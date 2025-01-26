@@ -6,44 +6,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap');
+
         body {
             background-image: url('https://i.postimg.cc/5NPmTFYv/background.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Geist', sans-serif;
         }
-        
+
         .section-bubble {
-            background-color: #68d9d9; /* Light blue color */
+            background-color: #68d9d9;
             padding: 20px;
-            border-radius: 30px; /* Adds a slight roundness to the corners */
-            width: 1500px; /* Fixed width */
-            margin: 20px auto; /* Centers the section horizontally */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+            border-radius: 30px;
+            width: 1500px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: block;
-            text-align: center; /* Centers text inside the section */
+            text-align: center;
         }
-        
+
+        .sidenav {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #333;
+            color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+            transition: left 0.3s ease;
+        }
+
+        .sidenav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidenav ul li {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+        }
+
+        .sidenav ul li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .sidenav ul li a:hover {
+            background: #555;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .menu-icon:hover + .sidenav {
+            left: 0;
+        }
+
+        .sidenav:hover {
+            left: 0;
+        }
+
+        .menu-icon i {
+            color: #fff;
+            background: #333;
+            padding: 10px;
+            border-radius: 50%;
+        }
     </style>
     <title> Liwei Xia - Home </title>
-    <link rel="stylesheet" href="styles.css">
 </head>
-    <div class = "container section-bubble">
-      <h1>Hi, my name is</h1>
-      <h1>Liwei Xia</h1>
+<body>
+    <div class="menu-icon">
+        <i class='bx bx-menu'></i>
+    </div>
+    <div class="sidenav" id="mySidenav">
+        <ul>
+            <li><a href="index.html"><i class='bx bxs-home'></i> Home</a></li>
+            <li><a href="Projects.html"><i class='bx bx-laptop'></i> Projects</a></li>
+        </ul>
+    </div>
+
+    <div class="container section-bubble">
+        <h1>Hi, my name is</h1>
+        <h1>Liwei Xia</h1>
     </div>
     <div class="section-bubble fade-in">
         <p>Hello! My name is <a href="https://i.postimg.cc/y8jXc3BW/Cyber-Patriot-National-Champion.jpg">Liwei Xia</a>, and I am an aspiring high school student interested in Information Technology! Welcome to my website!</p>
-        <div class ="image-container">
-        <img src = "https://i.postimg.cc/bwS7rLpq/self-portrait.jpg" alt = "self-portrait">
+        <div class="image-container">
+            <img src="https://i.postimg.cc/bwS7rLpq/self-portrait.jpg" alt="self-portrait">
         </div>
     </div>
 
     <div class="section-bubble">
         <h2> Contacts </h2>
-        <h6> <a href = "https://www.linkedin.com/in/liwei-xia-9b0318305">Linkedin</a> </h6>
-        <h6> <a href = "mailto:liweixia24@gmail.com">Email</a> </h6>
-        <h6> <a href = "https://i.postimg.cc/sDkfMqF2/Xia-Liwei-Revised-Resume.png">Resume</a></h6>
+        <h6> <a href="https://www.linkedin.com/in/liwei-xia-9b0318305">Linkedin</a> </h6>
+        <h6> <a href="mailto:liweixia24@gmail.com">Email</a> </h6>
+        <h6> <a href="https://i.postimg.cc/sDkfMqF2/Xia-Liwei-Revised-Resume.png">Resume</a></h6>
         <h6> Phone Number: (626) 620-3044</h6>
     </div>   
 
@@ -51,15 +121,5 @@
         <p> More Changes and Updates Coming Soon! </p>
     </div>
     <button onclick="window.location.href='https://i.postimg.cc/CK3PtVq8/cat.jpg';">Cat Attack!</button>
-    <div class="sidenav" id="mySidenav">
-        <a> <i class='bx bx-menu'></i> Menu</a>
-        <br>
-        <br>
-        <a href="index.html"><i class='bx bxs-home'></i> Home</a>
-        <a href="Projects.html"><i class='bx bx-laptop'></i> Projects</a>
-    </div>
-
-
-
 </body>
 </html>
