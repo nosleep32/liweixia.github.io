@@ -5,65 +5,52 @@
     <link rel="icon" href="https://i.postimg.cc/2S7CCrY4/icon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-image: url('https://i.postimg.cc/5NPmTFYv/background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .section-bubble {
-            background-color: #68d9d9; /* Light blue color */
-            padding: 20px;
-            border-radius: 30px; /* Adds a slight roundness to the corners */
-            width: 1500px; /* Fixed width */
-            margin: 20px auto; /* Centers the section horizontally */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-            display: block;
-            text-align: center; /* Centers text inside the section */
-        }
-        
-    </style>
-    <title> Liwei Xia - Home </title>
+    <title>Liwei Xia - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-    <div class = "container section-bubble">
-      <h1>Hi, my name is</h1>
-      <h1>Liwei Xia</h1>
+<body>
+    <!-- Sidebar and Toggle Menu -->
+    <div class="menu-icon" onclick="toggleSidebar()">
+        <i class='bx bx-menu'></i>
+    </div>
+    <div class="sidenav" id="mySidenav">
+        <ul>
+            <li><a href="index.html"><i class='bx bxs-home'></i> Home</a></li>
+            <li><a href="projects.html"><i class='bx bx-laptop'></i> Projects</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container section-bubble">
+        <h1>Hi, my name is</h1>
+        <h1>Liwei Xia</h1>
     </div>
     <div class="section-bubble fade-in">
         <p>Hello! My name is <a href="https://i.postimg.cc/y8jXc3BW/Cyber-Patriot-National-Champion.jpg">Liwei Xia</a>, and I am an aspiring high school student interested in Information Technology! Welcome to my website!</p>
-        <div class ="image-container">
-        <img src = "https://i.postimg.cc/bwS7rLpq/self-portrait.jpg" alt = "self-portrait">
+        <div class="image-container">
+            <img src="https://i.postimg.cc/bwS7rLpq/self-portrait.jpg" alt="self-portrait">
         </div>
     </div>
 
     <div class="section-bubble">
-        <h2> Contacts </h2>
-        <h6> <a href = "https://www.linkedin.com/in/liwei-xia-9b0318305">Linkedin</a> </h6>
-        <h6> <a href = "mailto:liweixia24@gmail.com">Email</a> </h6>
-        <h6> <a href = "https://i.postimg.cc/sDkfMqF2/Xia-Liwei-Revised-Resume.png">Resume</a></h6>
-        <h6> Phone Number: (626) 620-3044</h6>
-    </div>   
+        <h2>Contacts</h2>
+        <h6><a href="https://www.linkedin.com/in/liwei-xia-9b0318305">LinkedIn</a></h6>
+        <h6><a href="mailto:liweixia24@gmail.com">Email</a></h6>
+        <h6><a href="https://i.postimg.cc/sDkfMqF2/Xia-Liwei-Revised-Resume.png">Resume</a></h6>
+        <h6>Phone Number: (626) 620-3044</h6>
+    </div>
 
     <div class="section-bubble">
-        <p> More Changes and Updates Coming Soon! </p>
+        <p>More changes and updates coming soon!</p>
     </div>
 
-    <div class="menu-icon">
-        <i class='bx bx-menu'></i>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="sidenav" id="mySidenav">
-        <ul>
-            <li><a href="index.html"><i class='bx bxs-home'></i> Home</a></li>
-            <li><a href="Projects.html"><i class='bx bx-laptop'></i> Projects</a></li>
-        </ul>
-    </div>
-    
-
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('mySidenav');
+            const body = document.body;
+            sidebar.classList.toggle('open');
+            body.classList.toggle('sidebar-open');
+        }
+    </script>
 </body>
 </html>
