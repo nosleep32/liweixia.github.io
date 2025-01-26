@@ -9,8 +9,10 @@
 }
 
 body {
-    font-family: font-family: 'Geist Sans', sans-serif;
-    color: #19358a;
+  font-family: 'Geist Sans', sans-serif;
+  color: #77a4c9; /* Updated color */
+  margin: 0;
+  padding: 0;
 }
 
 .container{
@@ -88,6 +90,7 @@ body {
     border-color: transparent;
   }
 }
+
 
 
 /* Style the header */
